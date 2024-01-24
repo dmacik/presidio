@@ -249,7 +249,7 @@ registry.load_predefined_recognizers()
 
 registry.add_recognizers_from_yaml(yaml_file)
 
-analyzer = AnalyzerEngine()
+analyzer = AnalyzerEngine(registry=registry)
 analyzer.analyze(text="Mr. and Mrs. Smith", language="en")
 ```
 
